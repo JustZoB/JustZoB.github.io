@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body class="night">
+    <div class="menu">
+        <h1>To Do List</h1>
+    </div>
+    <div class="time-buttons">
+        <button class="i basic moon"><i class="fas fa-moon fa-lg"></i></button>
+        <button class="i basic sun hide"><i class="fas fa-sun fa-lg"></i></button>
+    </div>
+    <button class="i basic share-button" title="Share"><i class="fas fa-share fa-lg"></i></button>
+    <input class='share-input hide' type='text'></input>
+    <div class="share-copied">Copied!</div>
+    <div class="container">
+        <div class="articles" id="articles">
+            <div class="newStatus">
+                <div class="status__add">
+                    <div class="newStatus__content">
+                        <button class="status__add__button_open">Add status</button>
+                        <div class="status__add__adding-block hide">
+                            <textarea class="status__add__value" type="text" maxlength="12" placeholder="Enter a head of your status..."></textarea>
+                            <div class="status__add__buttons">
+                                <button class="status__add__button_add">Add status</button>
+                                <button class="status__add__button_close i basic" title="Close"><i class="fas fa-times fa-lg"></i></button>
+                                <button class="status__add__button_color i blue" title="Paint"><i class="fas fa-palette fa-lg"></i></button>
+                                <div class="status__add__choose-color hide popup">
+                                    <span class="blue"></span>
+                                    <span class="yellow"></span>
+                                    <span class="red"></span>
+                                    <span class="green"></span>
+                                    <span class="purple"></span>
+                                    <span class="lightgreen"></span>
+                                    <span class="orange"></span>
+                                    <span class="navy"></span>
+                                    <span class="gold"></span>
+                                    <span class="cooper"></span>
+                                    <span class="lightpink"></span>
+                                    <span class="charcoal"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <datalist id="hashtags"></datalist>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/local-storage.js"></script>
+    <script src="scripts/status.js"></script>
+    <script src="scripts/tag.js"></script>
+    <script src="scripts/task.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
